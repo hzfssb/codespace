@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <canvas id="canvas" width="300" height="300"></canvas>
+
+   <script>
+    let canvas = document.getElementById("canvas")
+    let ctx = canvas.getContext("2d")
+    // ctx.fillStyle = "green"
+    // ctx.fillRect(10,10,55,50)
+    // ctx.fillRect(10,10,100,50) //专画矩形
+    // ctx.strokeRect(10,70,100,50)
+
+
+    //画三角
+    // ctx.beginPath()
+    // ctx.moveTo(50,50)
+    // ctx.lineTo(200,50)
+    // ctx.lineTo(200,200)
+    // ctx.closePath()
+    // ctx.stroke() //绘制
+    // ctx.fill() //有填充色
+
+
+    //画圆
+    // ctx.beginPath()
+    // ctx.arc(50,50,40,0,Math.PI / 2)
+    // ctx.stroke()
+
+
+    ctx.font = '100px sans-serif'
+    ctx.fillText('hello',10,100)
+    ctx.strokeText('world',10,200)
+
+   
+    // console.log(ctx);
+
+   </script>
+</body>
+</html>
