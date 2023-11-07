@@ -38,14 +38,14 @@ console.log(arr.length);
 // console.log(str.length)
 
 
-面试题
-var str = 'abc'
-str += 1
-var test = typeof(str)//'string'
-if (test.length == 6){
-    //new String(test).length
-    test.sign = 'typeof的返回结果可能为string'
-    //new String(test).sign = 'typeof的返回结果可能为string'
-    //delete
-}
-console.log(test.sign);//new String(test).sign,最后undefined
+// 面试题
+// var str = 'abc'
+// str += 1
+// var test = typeof(str)//'string'
+// if (test.length == 6){
+//     //new String(test).length
+//     test.sign = 'typeof的返回结果可能为string'
+//     //new String(test).sign = 'typeof的返回结果可能为string'
+//     //delete
+// }
+// console.log(test.sign);//new String(test).sign,最后undefined
