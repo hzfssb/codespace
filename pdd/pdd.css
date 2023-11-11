@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    /* 增加盒子模型方式切换属性 */
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: #44ef10;
+    letter-spacing: 1px;
+}
+
+.pdd-box {
+    width: 95%;
+    margin: 10px auto;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.pdd-box__hd {
+    height: 64px;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pdd-box__title {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.pdd-box__right {
+    font-size: 19px;
+    color: gray;
+}
+
+.pdd-box__bd {
+    height: 84px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.pdd-box__item {
+    width: 20%;
+    text-align: center;
+    line-height: 2em;
+    color: black;
+    position: relative;
+}
+
+.pdd__desc {
+    font-size: 14px;
+}
+
+.iconfont {
+    font-size: 24px !important;
+ }
+
+.pdd__status {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: -3px;
+    right: 16px;
+    border-radius: 50%;
+    
+}
+
+
+
+.pdd__status--on {
+    position: absolute;
+    top: -9px;
+    right: 9px;
+    font-size: 14px; 
+    color: #ff0000;    
+}
