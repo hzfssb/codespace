@@ -1,0 +1,4 @@
+.hero{
+  color:#fff;
+  background-color: green;
+}

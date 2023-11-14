@@ -18,3 +18,9 @@ function unique(arr) {
 
 var unique = (arr) => [...new Set(arr)]
 console.log(unique(arr));
+
+
+let set = new Set([1,1,2,2,3,4])
+
+console.log(set)//没迭代器属性，不能被遍历
+console.log(set.keys())//有该属性

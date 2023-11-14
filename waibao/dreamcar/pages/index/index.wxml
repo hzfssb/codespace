@@ -1,0 +1,13 @@
+<!--wx提供丰富组件-->
+<swiper
+  
+  indicator-dots="{{true}}"
+  class="section hero white"
+
+>
+<swiper-item>1</swiper-item>
+<swiper-item>2</swiper-item>
+
+
+
+</swiper>
