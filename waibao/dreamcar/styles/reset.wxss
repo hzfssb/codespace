@@ -1,0 +1,9 @@
+image {
+  display: block;
+  width: 100%;
+}
+page {
+  line-height: 1.5;
+  /*rpx是小程序专属的相对单位 2rpx=1px*/
+  font-size: 32rpx;
+}
