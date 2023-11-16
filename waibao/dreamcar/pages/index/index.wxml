@@ -3,10 +3,8 @@
   <text>{{slides[0].description}}111</text>
   <text>222</text>
 </view> -->
-<swiper 
-  indicator-dots="{{true}}"
-  class="section hero white"
->
+<!--幻灯片-->
+<swiper indicator-dots="{{true}}" class="section hero white">
   <!-- 循环输出 -->
   <block wx:for="{{slides}}" wx:key="id">
     <swiper-item>
@@ -22,5 +20,36 @@
       </view>
     </swiper-item>
   </block>
-  
+
 </swiper>
+<view class="cards">
+  <view class="card">
+    <view class="card" wx:for="{{ entities }}" wx:key="id">
+      <!-- a标签 navigator
+   ./代表当前目录 相对路径
+   /代表绝对路径 项目根目录
+  -->
+      <navigator url="/pages/vehicles/show?id={{item.id}}">
+        <image src="{{ item.image }}" mode="aspectFill" />
+        <view class="content">
+          <view class="header">
+            {{ item.header }}
+            <view class="sub-header">
+              {{ item.sub_header }}
+            </view>
+            <view class="description">
+              {{ item.description }}
+            </view>
+            <view class="meta">
+              {{ item.meta.price }}
+            </view>
+
+          </view>
+        </view>
+      </navigator>
+
+    </view>
+
+  </view>
+
+</view>

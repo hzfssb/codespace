@@ -29,4 +29,8 @@
      -app.wxss全局样式
       -公用的样式
       -模块化
-     - page.wxss 页面 
+     - page.wxss 页面 业务样式
+     - 页面中比较独特的模块，独立css文件
+     - 通用组件也可以
+     button card 都是组件
+     通用的业务：.hero>.content>.header+.sub_header

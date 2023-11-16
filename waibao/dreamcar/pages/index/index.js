@@ -16,7 +16,7 @@ Page({
     setTimeout(() => {
       this.setData({
         slides:app.globalData.slides,
-        entities:app.globalData.vehicles
+        entities:app.globalData.vehicles,
 
       })
     },2000)
