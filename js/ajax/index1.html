@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn">新歌速递</button>
+    <ul id="ul">
+    </ul>
+
+    <script>
+        const btn = document.getElementById('btn');
+        btn.addEventListener('click', () => {
+            // 朝网易云的服务器的后端代码发一个http请求
+            let xhr = new XMLHttpRequest(); //创建一个可以发请求的实例对象
+            // open用来做请求的准备工作,GET去要一个值
+            xhr.open('GET', 'http://192.168.31.45:3000/top/song?type=7', true); //最后一个参数用来开启同异步，true是异步
+            // 接收后端的响应
+            xhr.onreadystatechange = () => {
+                // === 4 数据解析已完成  200是http状态码
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    // 将响应的数据存在responseText
+                    let result = JSON.parse(xhr.responseText);
+
+                    // foreach三个形参：第一个是内容，第二个是下标
+                    result.data.forEach(song => {
+                        let li = document.createElement('li');
+                        li.innerHTML = song.name;
+                        document.getElementById('ul').appendChild(li);
+                    });
+                }
+            };
+            // 传请求
+            xhr.send();
+        });
+    </script>
+</body>
+</html>

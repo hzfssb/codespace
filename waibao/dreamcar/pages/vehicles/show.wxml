@@ -4,7 +4,7 @@
     <view class="content">
      <view class="header">
       {{ entity.header }}
-       <view class="sub_header">
+       <view class="sub-header">
         {{ entity.sub_header }}
        
        </view>

@@ -22,7 +22,7 @@
   letter-spacing: 4rpx;
 }
 
-.cover .sub-header {
+.cover .sub_header {
   font-size: 26rpx;
   font-weight: normal;
   text-transform: uppercase;

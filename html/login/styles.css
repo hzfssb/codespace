@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.music_head {
+    height: 50px;
+    position: relative;
+}
+
+.back {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+}
+
+.music_head .back img {
+    width: 30px;
+    height: 30px;
+}
+
+.music_head .title {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.music_head .title img {
+    width: 20px;
+    height: 20px;
+}
+
+.music_body {
+    padding: 100px 40px;
+}
+
+.music_body .input {
+    margin: 0 40px;
+}
+
+.music_body .input input {
+    width: 100%;
+    padding: 10px 8px;
+    box-sizing: border-box;
+    margin: 10px 0;
+}
+
+.music_body .mybutton {
+    margin: 30px 40px;
+}
+
+.mybutton button {
+    height: 38px;
+    width: 100%;
+    border-radius: 20px;
+}
+.text {
+    text-align: center;
+    
+}
+.reset-link {
+    color: blue; 
+    text-decoration: none; 
+    cursor: pointer; 
+}
+/* 添加弹出框的样式 */
+.modal {
+    display: none;
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+   
+    z-index: 999;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    width: 30%;
+    height: 30%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 998;
+}
+
+
