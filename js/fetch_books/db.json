@@ -1,0 +1,45 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "js you don't know",
+      "author": "况君豪"
+    },
+    {
+      "id": 2,
+      "title": "JavaScript高级程序设计",
+      "author": "进哥哥"
+    },
+    {
+      "id": 3
+    },
+    {
+      "id": 4
+    },
+    {
+      "id": 5
+    },
+    {
+      "title": "55",
+      "author": "66",
+      "id": 6
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    },
+    {
+      "id": 2,
+      "body": "学习了",
+      "postId": 1
+    },
+    {
+      "body": "哈哈",
+      "postId": "1",
+      "id": 3
+    }
+  ]
+}
