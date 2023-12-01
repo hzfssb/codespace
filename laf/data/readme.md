@@ -6,6 +6,6 @@
   注册 name + password
   where({name}).count
   {total} = await where({name}).count
-  if (total >= ) {return}
+  if (total >= 0) {return}
   - limit 数量
   第五页 .offset((page-1)*size).limit(size)
