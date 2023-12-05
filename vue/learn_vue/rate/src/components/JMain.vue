@@ -10,7 +10,7 @@
   
   <script setup>
   import { ref } from 'vue'
-  import Item from './Item.vue';
+  import Item from '/Item.vue';
   
   let users = ref()
   
