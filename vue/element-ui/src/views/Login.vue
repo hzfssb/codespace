@@ -38,7 +38,7 @@
                 // this.$router.push(`/home/${this.account}`)
                 // this.$router.push({path:'/home',query:{user:this.account}})
                 // this.$router.push({name:'home',params:{user:this.account}})
-                this.$router.push({name:'/home',hash:`#${this.account}`})
+                this.$router.push({path: 'home', hash: `#${this.account}`})
 
             }
         }
