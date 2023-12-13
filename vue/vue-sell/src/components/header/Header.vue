@@ -30,7 +30,9 @@
     </div>
 
     <div class="bg" v-if="seller.avatar" :style="{backgroundImage: `url(${seller.avatar})`}"></div>
-    <header-detail  v-show="detailShow" @hide="handle"/>
+    
+    <header-detail v-show="detailShow" @hide="handle"/>
+
   </div>
 </template>
 
@@ -41,7 +43,6 @@ export default {
   components: {
     SupportIcon,
     HeaderDetail
-
   },
   props: {
     seller: {
@@ -51,7 +52,7 @@ export default {
   },
   data() {
     return {
-        detailShow : false
+      detailShow: false
     }
   },
   methods: {
@@ -59,7 +60,7 @@ export default {
       this.detailShow = true;
     },
     handle(val) {
-      // console.log('子组件发布了一个事件hide,值为'，val);
+      // console.log('子组件发布了一个事件hide，值为:', val);
       this.detailShow = val
     }
   }
