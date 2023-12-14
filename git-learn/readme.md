@@ -11,7 +11,7 @@
 两个文件
 git add 1.py
 git add 2.vue
-git commit -m ''老板要看（一上午3次大概）
+git commit -m ''老板要看（一上午3次大概好）
 
 
 5.git push origin master 将文件推送到远程仓库
