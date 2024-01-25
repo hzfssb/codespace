@@ -17,7 +17,7 @@
                       :rules="[{ required: true, message: '请填写密码' }]" />
               </van-cell-group>
               <div style="margin: 16px;">
-                  <van-button round block color="#7232dd" native-type="submit">
+                <van-button round block type="primary" native-type="submit" style="background-color: #126b62; color: #fff;">
                       注册
                   </van-button>
               </div>

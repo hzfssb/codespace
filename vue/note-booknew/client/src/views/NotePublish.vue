@@ -110,8 +110,9 @@ const onSubmit = async() => {
 }
 
 const afterRead = () => {
-    console.log(state.picture[0].ocntent)
+    console.log(state.picture[0].content); // 修正拼写错误
 }
+
 </script>
 
 <style lang="less" scoped>
